@@ -15,7 +15,7 @@ public class HPObject{
 
 	WebDriver driver;
 	@FindBy(xpath = "(//span[@class=\"d-none d-md-inline-block\"])[2]")
-	WebElement SupportEmailLinktext1;
+	WebElement SupportEmailLinktext;
 	
 	
 	public HPObject(WebDriver driver) {
@@ -32,7 +32,7 @@ public class HPObject{
 	public String GetSupportEmail() {
 //		WebElement SupportEmailLinktext = driver.findElement(By.xpath(SEmailXpath));
 		System.out.println("GetSupportEmail method started");
-		return SupportEmailLinktext1.getText();
+		return SupportEmailLinktext.getText();
 		
 	}
 
